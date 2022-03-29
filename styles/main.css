@@ -1,0 +1,103 @@
+:root {
+    --text-primary: #caf0f8;
+    --text-secondary: #ade8f4;
+    --text-hover: #0077b6;
+    --text-header: #90e0ef;
+    --bgcolor-primary: #0e121c;
+    --bgcolor-secondary: #220164;
+    --icon-hover: var(--text-secondary);
+
+}
+
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("fonts/Montserrat-Black.eot");
+    src: local("☺"), url("fonts/Montserrat-Black.woff") format("woff"), url("fonts/Montserrat-Black.ttf") format("truetype"), url("fonts/Montserrat-Black.svg") format("svg");
+    font-weight: 900;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("fonts/Montserrat-Bold.eot");
+    src: local("☺"), url("fonts/Montserrat-Bold.woff") format("woff"), url("fonts/Montserrat-Bold.ttf") format("truetype"), url("fonts/Montserrat-Bold.svg") format("svg");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("fonts/Montserrat-Regular.eot");
+    src: local("☺"), url("fonts/Montserrat-Regular.woff") format("woff"), url("fonts/Montserrat-Regular.ttf") format("truetype"), url("fonts/Montserrat-Regular.svg") format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("fonts/Montserrat-Light.eot");
+    src: local("☺"), url("fonts/Montserrat-Light.woff") format("woff"), url("fonts/Montserrat-Light.ttf") format("truetype"), url("fonts/Montserrat-Light.svg") format("svg");
+    font-weight: 300;
+    font-style: normal
+}
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    /*background-color: #0a3f62;*/
+    background-color: var(--bgcolor-secondary);
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%
+}
+
+a {
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: .5s ease-in;
+}
+
+a:hover {
+    transition: .9s ease-out;
+}
+
+.section--header {
+    color: var(--text-header);
+}
+
+
+@media screen and (min-device-pixel-ratio: 1.5), screen and (min-resolution: 1.5dppx) {
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+details summary {
+    cursor: pointer;
+}
+
+img.next-image {
+    margin: 0;
+}
+
+.prose a {
+    color: var(--text-primary);
+}
+
+.prose h1 {
+    color: var(--text-secondary);
+}
+
+.nav-line .nav-link {
+    color: #69778c;
+}
